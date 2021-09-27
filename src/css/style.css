@@ -1,6 +1,10 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #1c1819;
     box-sizing: border-box;
 }
 
@@ -13,4 +17,222 @@ h5,
 h6 {
     margin: 0;
     padding: 0;
+}
+
+/*     Let's do styles ;)      */
+
+#app {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.modal {
+    position: absolute;
+    width: 1040px;
+    top: 50%;
+    left: 50%;
+    background: #fff;
+    transform: translate(-50%, -50%);
+    border-radius: 16px;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 56px;
+    position: relative;
+}
+
+.card__preview {
+    margin-right: 24px;
+}
+
+.card__images {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.card__images img {
+    cursor: pointer;
+    margin-left: 8px;
+}
+
+.card__images img:first-child {
+    margin-left: 0;
+}
+
+.card__images .active {
+    border: 1px solid #2a81dd;
+    border-radius: 8px;
+}
+
+.card__title {
+    font-size: 20px;
+    line-height: 32px;
+    margin: 8px 0;
+}
+
+.card__worth {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.card__price__text {
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.button {
+    padding: 6px 24px;
+    box-shadow: 0 2px 4px rgba(28, 24, 25, 0.1);
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.button-yellow {
+    background: #ffdd61;
+}
+
+.card__balance {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    background: #f0fafd;
+    border-radius: 16px;
+}
+
+.card__balance__hint {
+    color: #888b94;
+    margin-bottom: 4px;
+}
+
+.card__balance__value {
+    font-size: 16px;
+}
+
+.card__balance__img {
+    display: block;
+    margin-left: 16px;
+}
+
+.card__defination__color {
+    margin-bottom: 24px;
+}
+
+.card__defination__text {
+    margin-bottom: 8px;
+}
+
+.card__defination__colors {
+    display: flex;
+}
+
+.card__defination__colors .option {
+    display: flex;
+    margin-right: 8px;
+    padding: 8px 18px 8px 8px;
+    cursor: pointer;
+    border: 1px solid #d4d4da;
+    border-radius: 8px;
+}
+
+.option .square {
+    width: 23px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+.color-1 .square {
+    background: #00458a;
+}
+
+.color-2 .square {
+    background: #efe8d8;
+}
+
+.color-3 .square {
+    background: #d4d4da;
+}
+
+.option span {
+    color: #2a81dd;
+}
+
+.card__defination input[type='radio'] {
+    display: none;
+}
+
+#color-1:checked ~ .color-1,
+#color-2:checked ~ .color-2,
+#color-3:checked ~ .color-3 {
+    background: #d6ecfb;
+    border: 0;
+}
+
+#color-1:checked ~ .color-1 span,
+#color-2:checked ~ .color-2 span,
+#color-3:checked ~ .color-3 span {
+    color: #1c1819;
+}
+
+.card__defination__size {
+    margin-bottom: 24px;
+}
+
+.card__defination__sizes {
+    display: flex;
+}
+
+.card__defination__sizes .option {
+    padding: 8px 16px;
+    margin-right: 8px;
+    cursor: pointer;
+    border: 1px solid #d4d4da;
+    border-radius: 8px;
+}
+
+#size-1:checked ~ .size-1,
+#size-2:checked ~ .size-2,
+#size-3:checked ~ .size-3 {
+    background: #d6ecfb;
+    border: 0;
+}
+
+#size-1:checked ~ .size-1 span,
+#size-2:checked ~ .size-2 span,
+#size-3:checked ~ .size-3 span {
+    color: #1c1819;
+}
+
+.card__defination__detail {
+    margin-bottom: 24px;
+}
+
+.card__defination__detail:last-child {
+    margin-bottom: 0;
+}
+
+.card__defination__title {
+    font-weight: 600;
+}
+
+.card__close__btn {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    border: 0;
+    background-color: #fff;
+    color: gray;
+    font-size: 36px;
+    cursor: pointer;
 }
