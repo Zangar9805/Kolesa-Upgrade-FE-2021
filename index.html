@@ -4,10 +4,114 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/src/assets/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <title>Vite App</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+        <h1>jflsdjfdsjlfld</h1>
+        <div class="modal">
+            <div class="card">
+                <div class="card__preview">
+                    <img src="src/img/01.jpg" alt="Cool T-shirt" width="330" height="330" />
+                    <div class="card__images">
+                        <img src="src/img/02.jpg" alt="Cool T-shirt #1" width="50" height="50" />
+                        <img src="src/img/03.jpg" alt="Cool T-shirt #2" width="50" height="50" class="active" />
+                        <img src="src/img/04.jpg" alt="Cool T-shirt #3" width="50" height="50" />
+                    </div>
+                </div>
+                <div class="card__description">
+                    <div class="card__title">
+                        Футболка "Эволюционируй или сдохни"
+                    </div>
+                    <div class="card__worth">
+                        <div class="card__price">
+                            <p class="card__price__text">100 баллов</p>
+                            <button class="button button-yellow">
+                                Попросить 50 баллов
+                            </button>
+                        </div>
+                        <div class="card__balance">
+                            <div class="card__balance__text">
+                                <p class="card__balance__hint">
+                                    Твой баланс:
+                                </p>
+                                <p class="card__balance__value">
+                                    50 баллов
+                                </p>
+                            </div>
+                            <div class="card__balance__img">
+                                <img src="src/img/sale.jpg" alt="Sale Icon" width="50" height="50">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__defination">
+                        <div class="card__defination__color">
+                            <p class="card__defination__text">
+                                Цвета:
+                            </p>
+                            <div class="card__defination__colors">
+                                <input type="radio" name="select" id="color-1" checked>
+                                <input type="radio" name="select" id="color-2">
+                                <input type="radio" name="select" id="color-3">
+
+                                <label for="color-1" class="option color-1">
+                                    <div class="square"></div>
+                                    <span>Синий</span>
+                                </label>
+                                <label for="color-2" class="option color-2">
+                                    <div class="square"></div>
+                                    <span>Бежевый</span>
+                                </label>
+                                <label for="color-3" class="option color-3">
+                                    <div class="square"></div>
+                                    <span>Серый</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="card__defination__size">
+                            <p class="card__defination__text">
+                                Размер:
+                            </p>
+                            <div class="card__defination__sizes">
+                                <input type="radio" name="sizes" id="size-1" checked>
+                                <input type="radio" name="sizes" id="size-2">
+                                <input type="radio" name="sizes" id="size-3">
+                                <label for="size-1" class="option size-1">
+                                    <span>S</span>
+                                </label>
+                                <label for="size-2" class="option size-2">
+                                    <span>M</span>
+                                </label>
+                                <label for="size-3" class="option size-3">
+                                    <span>L</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="card__defination__detail">
+                            <p class="card__defination__title">
+                                Детали:
+                            </p>
+                            <p class="card__defination__text">
+                                Брендированная толстовка от Qazaq Republic. Материал: Хлопок 80%, Вискоза 20%
+                            </p>
+                        </div>
+                        <div class="card__defination__detail">
+                            <p class="card__defination__title">
+                                Как выбрать размер:
+                            </p>
+                            <p class="card__defination__text">
+                                Написать дяде Рику для уточнения.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="card__close__btn" type="button">&times;</button>
+
+            </div>
+        </div>
+    </div>
     <script type="module" src="/src/js/main.js"></script>
   </body>
 </html>
