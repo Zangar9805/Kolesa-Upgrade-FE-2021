@@ -134,10 +134,10 @@ h6 {
 }
 
 .card__defination__colors {
-    display: flex;
+    display: inline-flex;
 }
 
-.card__defination__colors .option {
+.radio__label {
     display: flex;
     margin-right: 8px;
     padding: 8px 18px 8px 8px;
@@ -146,42 +146,38 @@ h6 {
     border-radius: 8px;
 }
 
-.option .square {
+.radio__label .square {
     width: 23px;
     height: 24px;
     margin-right: 8px;
 }
 
-.color-1 .square {
+.radio__blue .square {
     background: #00458a;
 }
 
-.color-2 .square {
+.radio__beige .square {
     background: #efe8d8;
 }
 
-.color-3 .square {
+.radio__gray .square {
     background: #d4d4da;
 }
 
-.option span {
+.radio__label span {
     color: #2a81dd;
 }
 
-.card__defination input[type='radio'] {
+.radio__input {
     display: none;
 }
 
-#color-1:checked ~ .color-1,
-#color-2:checked ~ .color-2,
-#color-3:checked ~ .color-3 {
+.radio__input:checked + .radio__label {
     background: #d6ecfb;
     border: 0;
 }
 
-#color-1:checked ~ .color-1 span,
-#color-2:checked ~ .color-2 span,
-#color-3:checked ~ .color-3 span {
+.radio__input:checked + .radio__label .span {
     color: #1c1819;
 }
 
@@ -190,28 +186,15 @@ h6 {
 }
 
 .card__defination__sizes {
-    display: flex;
+    display: inline-flex;
 }
 
-.card__defination__sizes .option {
+.card__defination__sizes .radio__label {
     padding: 8px 16px;
     margin-right: 8px;
     cursor: pointer;
     border: 1px solid #d4d4da;
     border-radius: 8px;
-}
-
-#size-1:checked ~ .size-1,
-#size-2:checked ~ .size-2,
-#size-3:checked ~ .size-3 {
-    background: #d6ecfb;
-    border: 0;
-}
-
-#size-1:checked ~ .size-1 span,
-#size-2:checked ~ .size-2 span,
-#size-3:checked ~ .size-3 span {
-    color: #1c1819;
 }
 
 .card__defination__detail {
